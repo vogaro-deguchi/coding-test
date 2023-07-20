@@ -59,16 +59,16 @@ export default function Home() {
             <Text as={"p"} fontSize={"14px"} color={"#8c9396"} w={"69px"} height={"1px"} bgColor={"#8c9396"} transform={"translateY(10px)"} position={"relative"}  _before={{position:"absolute", top:"-10px",content:'"Services"', left:"84px",width:"69px",height:"1px"}}></Text>
             <Text fontSize={"26px"}>解決課題や目指すゴールに合わせたベストチームでプロジェクトを推進</Text>
           </Flex>
-          <Center gap={"10px"}>
+          <Flex alignItems={{base:"",md:"center"}} justifyContent={{base:"",md:"center"}} gap={"10px"} overflowX={"scroll"} w={"100vw"}>
             <Service btnType="border" image={"images/service1.jpg"} />
             <Service btnType="border" image={"images/service2.jpg"} />
             <Service btnType="border" image={"images/service3.jpg"} />
-          </Center>
+          </Flex>
           <Text as={"h3"} fontSize={"300px"} position={"absolute"} zIndex={"-1"} top={"0"} left={"40px"} color={"#f1f5f5"}>Services</Text>
           <Box w={"100vw"} height={"640px"} position={"absolute"} zIndex={"-1"} bottom={"0"} bgColor={"#f1f5f5"} />
         </Center>
 
-        <Center w={"100vw"} h={"1712px"} position={"relative"} bgColor={"#19282d"} flexFlow={"column"}>
+        <Center w={"100vw"} h={{base:"",md:"1712px"}} position={"relative"} bgColor={"#19282d"} flexFlow={"column"}>
           <Flex flexFlow={"column"} gap={"32px"} width={{base:"",md:"1160px"}} margin={{base:"220px 0 56px",md:""}} zIndex={"2"}>
             <Text as={"p"} fontSize={"14px"} color={"#8c9396"} w={"69px"} height={"1px"} bgColor={"#8c9396"} transform={"translateY(10px)"} position={"relative"}  _before={{position:"absolute", top:"-10px",content:'"Projects"', left:"84px",width:"69px",height:"1px"}}></Text>
             <Text fontSize={"26px"} color={"#fff"}>プロジェクト紹介</Text>
@@ -94,7 +94,7 @@ export default function Home() {
                 {/* <Project image="images/fv_img.jpeg" width="calc(100vw / 4)" height={"100%"} />
                 <Project image="images/fv_img.jpeg" width="calc(100vw / 4)" height={"100%"} /> */}
               </Flex>
-              <Flex w={"100%"} h={"50%"}flexWrap={"wrap"}>
+              <Flex w={"100%"} h={{base:"",md:"50%"}}flexWrap={"wrap"}>
               {projects.Arrays.map((e,i) => {
                   if ( i >= 3 && i <= 4) {
                     return(
@@ -111,7 +111,7 @@ export default function Home() {
         </Center>
 
         <Center w={"100vw"} h={""} position={"relative"} padding={"180px 0"}>
-          <Flex justifyContent={"center"} alignItems={"start"} width={"1160px"} gap={"95px"} zIndex={"2"}>
+          <Flex alignItems={{base:"center",md:"start"}} justifyContent={{base:"center",md:"center"}} flexFlow={{base:"column",md:"row"}} width={{base:"100vw",md:"1160px"}} gap={"95px"} zIndex={"2"}>
             <Flex flexFlow={"column"} gap="99px">
               <Flex flexFlow={"column"} gap={"32px"}>
                 <Text as={"p"} fontSize={"14px"} color={"#8c9396"} w={"69px"} height={"1px"} bgColor={"#8c9396"} transform={"translateY(10px)"} position={"relative"}  _before={{position:"absolute", top:"-10px",content:'"News"', left:"84px",width:"69px",height:"1px"}}></Text>
@@ -120,8 +120,8 @@ export default function Home() {
               <ViewMore text="View All" width='272px' type="bgcr" />
             </Flex>
 
-            <Flex flexFlow={"column"}>
-              <Center w={"800px"} h={"142px"} borderTop={"1px solid #dddddd"} gap={"58px"} borderBottom={"1px solid #dddddd"}>
+            <Flex flexFlow={"column"} >
+              <Center w={{base:"80vw",md:"800px"}} h={"142px"} borderTop={"1px solid #dddddd"} gap={"58px"} borderBottom={"1px solid #dddddd"}>
                 <Center flexFlow={"column"} gap={"12px"} lineHeight={"24px"} w={"61px"}>
                   <Text as={"p"} fontSize={"12px"}>February</Text>
                   <Text as={"p"} fontSize={"50px"} marginBottom={"5px"}>22</Text>
@@ -130,7 +130,7 @@ export default function Home() {
                 <Image src={"./images/newsTest.jpg"} alt={""} />
                 <Text as={"p"} fontSize={"16px"}>毎日放送（MBS）グループとの戦略的資本提携を締結、次世代ビジネス/ブランド創出に向けた推進を加速</Text>
               </Center>
-              <Center w={"800px"} h={"142px"} borderTop={"1px solid #dddddd"} gap={"58px"} borderBottom={"1px solid #dddddd"}>
+              <Center w={{base:"80vw",md:"800px"}} h={"142px"} borderTop={"1px solid #dddddd"} gap={"58px"} borderBottom={"1px solid #dddddd"}>
                 <Center flexFlow={"column"} gap={"12px"} lineHeight={"24px"}w={"61px"}>
                   <Text as={"p"} fontSize={"12px"}>May</Text>
                   <Text as={"p"} fontSize={"50px"} marginBottom={"5px"}>01</Text>
@@ -139,7 +139,7 @@ export default function Home() {
                 <Image src={"./images/newsTest.jpg"} alt={""} />
                 <Text as={"p"} fontSize={"16px"} w={"528px"}>在宅勤務（フルリモートワーク）の実施延長のお知らせ</Text>
               </Center>
-              <Center w={"800px"} h={"142px"} borderTop={"1px solid #dddddd"} gap={"58px"} borderBottom={"1px solid #dddddd"}>
+              <Center w={{base:"80vw",md:"800px"}} h={"142px"} borderTop={"1px solid #dddddd"} gap={"58px"} borderBottom={"1px solid #dddddd"}>
                 <Center flexFlow={"column"} gap={"12px"} lineHeight={"24px"} w={"61px"}>
                   <Text as={"p"} fontSize={"12px"}>April</Text>
                   <Text as={"p"} fontSize={"50px"} marginBottom={"5px"}>09</Text>
@@ -152,9 +152,9 @@ export default function Home() {
           </Flex>
         </Center>
 
-        <Flex justifyContent={"center"} w={"100vw"} h={{base:"", md:"1068px"}} bgImage={{base:"url(images/company.jpg)",md:""}} padding={{base:"240px 0", md:""}} bgSize={"cover"} bgPosition={"center"}>
+        <Flex justifyContent={"center"} w={"100vw"} h={{base:"", md:"1068px"}} bgImage={{base:"url(images/company.jpg)",md:""}} padding={{base:"240px 0", md:"0"}} bgSize={"cover"} bgPosition={"center"}>
           <Flex justifyContent={"center"} position={"absolute"}left={0} w={{base:"100vw",md:"1770px"}} h={{base:"", md:"808px"}} bgImage={"url(images/company.jpg)"}></Flex>
-          <Flex justifyContent={{base:"", md:"space-between"}} flexFlow={{base:"column",md:""}} paddingTop={{base:"",md:"180px"}} alignItems={{base:"center", md:"start"}} width={"1160px"} zIndex={"2"}>
+          <Flex justifyContent={{base:"", md:"space-between"}} flexFlow={{base:"column",md:"row"}} paddingTop={{base:"0px",md:"180px"}} alignItems={{base:"center", md:"start"}} width={"1160px"} zIndex={"2"}>
             <Flex flexFlow={"column"} gap="99px">
               <Flex flexFlow={"column"} gap={"32px"}>
                 <Text as={"p"} fontSize={"14px"} color={"#8c9396"} w={"69px"} height={"1px"} bgColor={"#8c9396"} transform={"translateY(10px)"} position={"relative"}  _before={{position:"absolute", top:"-10px",content:'"Company"', left:"84px",width:"69px",height:"1px"}}></Text>
@@ -221,7 +221,7 @@ export default function Home() {
         </Flex>  
 
         <Flex alignItems={"center"} justifyContent={"center"} w={"100vw"} h={"640px"} bgImage={"url(./images/contactImg.jpg)"}>
-          <Flex justifyContent={{base:"center",md:"space-between"}} alignItems={{base:"center",md:"start"}} flexFlow={{base:"column",md:""}} width={"1160px"} flexWrap={"wrap"} zIndex={"2"} gap={"60px"}>
+          <Flex justifyContent={{base:"center",md:"space-between"}} alignItems={{base:"center",md:"start"}} flexFlow={{base:"column", md:"row"}} width={"1160px"} flexWrap={"wrap"} zIndex={"2"} gap={"60px"}>
             <Flex flexFlow={"column"} gap={"32px"}>
               <Text as={"p"} fontSize={{base:"32px",md:"14px"}} color={"#b0c2e3"} w={"69px"} height={"1px"} bgColor={"#b0c2e3"} transform={"translateY(10px)"} position={"relative"}  _before={{position:"absolute", top:{base:"-24px",md:"-10px"},content:'"Reqruit"', left:"84px",width:{base:"100px",md:"69px"},height:"1px"}}></Text>
               <Text fontSize={{base:"36px",md:"26px"}} color={"#fff"}>実績に関するお問い合わせ、<br />案件のご依頼やご相談はこちら</Text>

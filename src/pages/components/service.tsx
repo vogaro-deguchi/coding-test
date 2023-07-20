@@ -9,7 +9,7 @@ interface propsType {
 
 const service = (props:propsType) => {
     return (
-        <Flex w={"470px"} h={"639px"} bgImage={`url(${(props.image)})`} alignItems={"center"} justifyContent={"space-between"}  padding={"80px 40px"} flexFlow={"column"} >
+        <Flex w={{base:"",md:"470px"}} minW={{base:"470px",md:""}} h={"639px"} bgImage={`url(${(props.image)})`} alignItems={"center"} justifyContent={"space-between"}  padding={"80px 40px"} flexFlow={"column"} >
             <Center gap={"48px"} flexFlow={"column"} color={"#fff"}>
                 <Text as={"h4"} fontSize={"26px"}>Webサイト制作</Text>
                 <Text as={"h4"} fontSize={"15px"}>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</Text>
